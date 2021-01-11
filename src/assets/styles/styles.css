@@ -1,0 +1,11 @@
+.app-btn {
+  text-transform: inherit;
+  color: white !important;
+  background: #5b5d45;
+  border-radius: 6px;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif !important;
+}

@@ -1,28 +1,63 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      dense
+      class="header-style"
+    >
+      <div class="d-flex align-center">
+        <v-img
+          alt="Vuetify Logo"
+          class="shrink mr-2"
+          contain
+          src="@/assets/img/logo.png"
+          transition="scale-transition"
+          width="40"
+        />
+
+        <v-btn href="#" text class="app-button">
+          <span class="mr-2">cumulative_intelligence</span>
+        </v-btn>
+         <v-btn href="#" text>
+          <span class="mr-2">cBMI Demo</span>
+        </v-btn>
+      </div>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        href="#"
+        target="_blank"
+        color="#5B5D45"
+        class="app-btn"
+      >
+        <span class="mr-2">Request a call</span>
+      </v-btn>
+    </v-app-bar>
+
+    <v-main>
+        <v-container fluid>
+          <!-- <router-view></router-view> -->
+        </v-container>
+    </v-main>
+    <v-footer app>
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+
+  data: () => ({
+    //
+  }),
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .header-style {
+    background-color: white !important;
+  }
 </style>
