@@ -1,6 +1,7 @@
 <template>
   <div class="application">
     <h1>My Application</h1>
+    <BmiMeter class="meter-styles"/>
     <web-cam class="webcam" autoplay ref="webcam"
         :selectFirstDevice="true"
                         @started="onStarted"
@@ -14,8 +15,9 @@
   </div>
 </template>
 <script>
-import { WebCam } from "vue-web-cam";
 
+import { WebCam } from "vue-web-cam";
+import BmiMeter from "@/components/BmiMeter"
 
 export default {
     data() {
@@ -27,7 +29,8 @@ export default {
         };
     },
     components: {
-        WebCam
+        WebCam,
+        BmiMeter
     },
     methods: {
         onCapture() {
@@ -64,5 +67,10 @@ export default {
 <style>
 .webcam {
     background-color: black;
+}
+
+.meter-styles {
+    position: absolute;
+    right: 12px;
 }
 </style>
