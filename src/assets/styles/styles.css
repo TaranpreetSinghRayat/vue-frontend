@@ -1,8 +1,12 @@
 .app-btn {
-  text-transform: inherit;
+  text-transform: inherit !important;
   color: white !important;
-  background: #5b5d45;
+  background: #5b5d45 !important;
   border-radius: 6px;
+}
+
+.margin-top-40 {
+  margin-top: 40px;
 }
 
 html,
