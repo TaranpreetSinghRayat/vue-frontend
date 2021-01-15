@@ -1,14 +1,14 @@
 <template>
   <div class="application">
-    <h1>My Application</h1>
-    <BmiMeter class="meter-styles"/>
+    <BmiMeter class="meter-styles" :bmi="this.bmi"/>
     <web-cam class="webcam" autoplay ref="webcam"
         :selectFirstDevice="true"
-                        @started="onStarted"
-                        @stopped="onStopped"
-                        @error="onError"
-                        @cameras="onCameras"
-                        @camera-change="onCameraChange"/>
+        @started="onStarted"
+        @stopped="onStopped"
+        @error="onError"
+        @cameras="onCameras"
+        @camera-change="onCameraChange"
+        />
     <v-btn class="app-btn" v-on:click="onCapture()">
         Capture
     </v-btn>
@@ -22,6 +22,7 @@ import BmiMeter from "@/components/BmiMeter"
 export default {
     data() {
         return {
+            bmi: 19, // this value need to be updated.
             img: null,
             camera: null,
             deviceId: null,
@@ -66,6 +67,7 @@ export default {
 </script>
 <style>
 .webcam {
+    height: calc(100vh - 27px);
     background-color: black;
 }
 
