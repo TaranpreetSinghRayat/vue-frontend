@@ -37,7 +37,7 @@
   background-image: url("assets/img/Mask_Group_1@2x.png");
   background-repeat: no-repeat;
   background-size: 100% 550px;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Aktiv Grotesk Corp", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

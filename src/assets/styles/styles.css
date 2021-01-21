@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Aktiv Grotesk Corp";
+  src: local("Aktiv Grotesk Corp"),
+    url(../fonts/AktivGrotesk-W06-Regular.ttf) format("truetype");
+}
+
 .app-btn {
   text-transform: inherit !important;
   color: white !important;
@@ -11,5 +17,5 @@
 
 html,
 body {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Aktiv Grotesk Corp", sans-serif !important;
 }
