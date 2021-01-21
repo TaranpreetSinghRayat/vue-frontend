@@ -1,12 +1,12 @@
 <template>
-  <v-app app>
-    <v-app-bar nav dense class="header-style">
+  <v-app>
+    <v-app-bar app dense class="header-style">
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="@/assets/img/logo.png"
+          src="@/assets/img/cumulative-logo-final-5B5D45_bjd@2x.png"
           transition="scale-transition"
           width="40"
         />
@@ -34,9 +34,9 @@
 
 <style lang="scss">
 #app {
-  background-image: url("assets/img/bg-image.jpg");
+  background-image: url("assets/img/Mask_Group_1@2x.png");
   background-repeat: no-repeat;
-  background-size: 100% 426px;
+  background-size: 100% 550px;
   font-family: "Montserrat", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -45,9 +45,11 @@
 }
 
 .header-style {
-  background-image: url("assets/img/bg-image.jpg");
+  background-color: rbg(0, 0, 0, 0.1);
+  background-image: url("assets/img/Mask_Group_1@2x.png");
   background-repeat: no-repeat;
-  background-size: 100% 426px;
+
+  background-size: 100% 550px;
   padding: 0 53px;
 }
 
