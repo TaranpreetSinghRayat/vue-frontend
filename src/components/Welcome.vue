@@ -112,6 +112,7 @@ export default {
 </script>
 <style>
 .application-container {
+  color: white;
   height: 378px;
   display: flex;
   align-items: center;
@@ -119,9 +120,8 @@ export default {
   flex-direction: column;
 }
 
-.details {
-  background-color: white;
-}
+/* .details {
+} */
 .about {
   padding: 20px 0;
 }

@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    <v-app-bar app dense class="header-style">
+  <v-app app>
+    <v-app-bar nav dense class="header-style">
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -28,13 +28,15 @@
         <router-view />
       </v-container>
     </v-main>
-    <v-footer app> </v-footer>
+    <v-footer> </v-footer>
   </v-app>
 </template>
 
 <style lang="scss">
 #app {
-  background-color: rgba(0, 0, 0, 0.17);
+  background-image: url("assets/img/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 426px;
   font-family: "Montserrat", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -42,26 +44,24 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-
 .header-style {
-  background-color: white !important;
+  background-image: url("assets/img/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 426px;
   padding: 0 53px;
 }
 
 .link {
   margin-right: 20px;
   text-decoration: none;
+
+  &.router-link-exact-active {
+    color: white;
+    font-weight: bold;
+  }
+
+  a {
+    color: white;
+  }
 }
 </style>
