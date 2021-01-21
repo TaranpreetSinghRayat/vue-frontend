@@ -165,6 +165,16 @@
         </div>
       </div>
     </div>
+    <div class="about-info-container">
+      <p style="width:50%; padding: 100px">
+        Leaps forward in computer vision technology cooinciding with the
+        supremacy of the smartphone, elastic cloud compute, and most recently
+        the COVID-19 pandemic have led to cumulative_intelligence. Formed out of
+        the MIT innovation ecosystem, headquartered out of Minnesota, and
+        founded by a husband and wife, we are bringing physiology, never before
+        thought possible, to any camera.
+      </p>
+    </div>
     <div class="know-about-us">
       <h1>Want To Learn More?</h1>
       <input placeholder="First Name " />
@@ -172,9 +182,7 @@
       <input placeholder="Email Address " />
       <input placeholder="Phone Number " />
       <textarea style=" height: 200px" placeholder="Tell us more" />
-
-      <v-btn style="width: 80%">submit Response</v-btn>
-
+      <v-btn class="app-btn" style="width: 80%">Submit Response</v-btn>
       <div class="footer">
         <v-img
           style="width: 40px"
@@ -184,7 +192,7 @@
       </div>
     </div>
     <div
-      style="border-top: 1px solid white; background-color: #525347; color: white; height: 40px"
+      style="border-top: 1px solid rgb(212, 212, 212);height: 40px;display: flex;justify-content: center;align-items: center;"
     >
       <h5>Cumulative_intelligence Corp, 2021</h5>
     </div>
@@ -210,11 +218,20 @@ export default {
   flex-direction: column;
 }
 
-/* .details {
-} */
 .about {
   padding: 20px 0;
   background: #f8f8f8;
+}
+
+.about-info-container {
+  text-align: left;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 363px;
+  background-image: linear-gradient(to right, transparent 50%, white, white),
+    url("../assets/img/girl-on-computer.png");
+  background-size: contain;
 }
 
 .about-topics {
@@ -248,21 +265,15 @@ export default {
 
 input,
 textarea {
-  border: 2px solid white;
+  border: 2px solid #d4d4d4;
   width: 80%;
   padding: 0 20px;
   margin: 10px 0;
-  color: white;
-}
-
-::placeholder {
-  color: white;
 }
 
 .know-about-us {
   padding: 60px;
-  background-color: #525347;
-  color: white;
+
   justify-content: center;
   display: flex;
   align-items: center;
